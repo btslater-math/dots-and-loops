@@ -1,7 +1,7 @@
 title: Dots & Loops
 description: A blog about mathematics — topology, algebra, and whatever else comes to mind.
 author: Ben Slater
-url: "https://yourusername.github.io"
+url: "https://btslater-math.github.io"
 baseurl: "/dots-and-loops"
 
 markdown: kramdown
@@ -11,4 +11,4 @@ kramdown:
 permalink: /:year/:month/:day/:title/
 
 # Add your professional site link here
-professional_site: "https://yourusername.github.io"
+professional_site: "https://btslater-math.github.io"
