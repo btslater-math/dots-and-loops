@@ -100,5 +100,49 @@ purposes of understanding the name of the blog, you can think of it as measuring
 ## Loops
 
 We now have a way of determining how many pieces a shape has. But many shapes come in just a single piece, and are
-still clearly different. For example, what's the difference between a circle and, say, a sphere? 
+still clearly different. For example, what's the difference between a circle and, say, a figure 8? 
 
+$$\bigcirc 8$$
+
+An ant living on a circle doesn't have many routes for an afternoon stroll. It can walk clockwise or counterclockwise, 
+maybe making a few complete laps in each direction, before eventually returning home to where it started. This still 
+leaves plenty of routes, but just as we reduced the infinity of points on the circle to a single "path component before,"
+we can define a relation which makes many of the paths on a circle the same.
+
+Imagine our ant has a poor sense of direction, and decides to keep track of the route home by unspooling a thread
+as it walks. Suppose it walks halfway around the circle, and then turns back. When it gets home and reels the thread in,
+it has no trouble collecting the entire thing. But now suppose it makes a complete lap clockwise. When it tries to reel the thread
+in this time, the string will get caught around the planet. If it goes a half lap further and then turns back, then it will
+be able to reel in the thread up to where it was after just a single complete lap, but no tighter. But if it now goes 
+all the way around the planet *counterclockwise*, the thread can once again be spooled back up. 
+
+In other words, as far as the thread can tell, the ant's route can be described quite easily: either it walked around the circle
+a certain number of times clockwise in total, or it walked around a certain number of times counterclockwise in total. (That "certain 
+number" can, of course, be zero). Thus, each path can be represented with a positive or negative integer.
+
+This collection of "loops" which can be drawn on a shape $X$ is called its "first homotopy group" or "fundamental group," denoted
+$\pi_1(X)$. So, $\pi_1(\bigcirc) = \mathbb{Z}$. ($\mathbb{Z}$ is just fancy notation for the set of integers). 
+
+If the ant lives on the node of a figure eight, things are quite different. Now, it has two loops it can walk around: either the top 
+loop or the bottom. If it walks (with its thread) clockwise around the top loop and then counterclockwise around the bottom loop, it 
+won't be able reel the string back in. In fact (you'll have to take my word for this), even if it then goes back around the top 
+loop counterclockwise, it *still* won't be able to reel the thread in!. To untangle the thread from this state (clockwise around the 
+top, then counterclockwise around the bottom, then counterclockwise around the top), it would need to go over the two loops in reverse
+order, undoing its progress each time (so, clockwise around the top, then clockwise around the bottom, then counterclockwise around the 
+top). On the other hand, if it just goes clockwise around the top loop, it can fix the string by simply going counterclockwise around 
+the top loop, just like before. The ant on the figure 8 therefore has many more routes for its stroll: it can go any number of times 
+around the top loop, then any number of times around the bottom, then any number of times around the top, then any number of times 
+around the bottom... and it can do this as many times as it wants (although it has to stop eventually). 
+
+Thus, $\pi_1(8)$ is much larger than $\pi_1(\bigcirc)$. (For those with some group theory knowledge, $\pi_1(8)$ is the "free product"
+$\mathbb{Z} * \mathbb{Z}$). 
+
+On a more technical level, a loop on $X$ can be described as a continuous map from the circle to $X$. Two such loops, 
+$f, g: \bigcirc \to X$, correspond to the same loop in $\pi_1$ (i.e. look the same after "reeling in the string" as much as possible) if
+there exists a map $h$ from the cylinder $\bigcirc \times [0,1]$ to $X$, such that $h$ looks like $f$ on the bottom of the cylinder 
+and like $g$ on the top (i.e., $h(\theta, 0) = f(\theta)$ and $h(\theta, 1) = g(\theta)$).
+
+## So, there you have it
+
+$\pi_0$ and $\pi_1$, Dots and Loops... of course, there are many more weapons in the topologist's arsenal, which I'll probably
+give an introductory account of at some point. But I think this is enough for tonight.
