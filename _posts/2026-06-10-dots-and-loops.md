@@ -1,4 +1,10 @@
-Piecing Together a Proof
+---
+layout: post
+title: "Piecing Together Proofs"
+date: 2026-06-10
+---
+
+Piecing Together Proofs
 
 I’ve spent most of my time as a TA this quarter trying (with limited success) to convey to mt Math 115A students the way I think about writing proofs. Finally, in my office hour last Tuesday, I landed on something that seemed to work. For posterity, and for any students this quarter who weren’t at that office hour making a last-minute push before Friday’s final, I wanted to write up this explanation.
 
