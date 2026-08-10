@@ -5,7 +5,7 @@ date: 2026-08-10
 ---
 
 [Well alright](https://www.youtube.com/watch?v=F3NImB7FMz4)! It's the end of the first day of the 
-2206 IWoAT summer school, and as a way to consolidate the material from the lectures in my head 
+2026 IWoAT summer school, and as a way to consolidate the material from the lectures in my head 
 (and to give me what to do at night) I'm going to try to post blog posts on each day's material. 
 These won't really be detailed lecture notes - more a summary of what I find important/interesting.
 I think what I'll do is split it up talk-by-talk. 
